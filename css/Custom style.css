@@ -1,0 +1,263 @@
+
+* {
+     box-sizing: border-box;
+  }
+
+.nav {
+        overflow: hidden;
+        background-color: rgb(9, 9, 9);
+  }
+  
+  /* Gestaltet die Links in der Navigationsleiste */
+  .nav a {
+        float: right;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px 16px;
+        text-decoration: none;
+        padding-left: 5px;
+        padding-right: 10px;
+        margin-right: 5px;
+  }
+  
+  /* Ändert die Farbe beim herüberfahren mit der Maus  */
+  .nav a:hover {
+        background-color: yellow;
+        color: black;
+  }
+
+  .header{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-family: 'Michroma', sans-serif;
+        
+  }
+
+  .textheader {
+        text-align: center;
+        margin-top: auto;
+        font-family: 'Michroma', sans-serif;
+        
+  }
+   /* Einen Container gestalten */
+  .text {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+        font-family: 'Michroma', sans-serif;
+  }
+  
+  img {
+        max-width: 100%;
+        height: auto;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 15px; 
+        margin-left: 15px;
+      
+  }
+
+.banner {
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    background-image: url('/img/Lampe.jpg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+
+.banner2 {
+  width: 100%;
+  height: 300px;
+  background-image: url('/img/Popcorn.jpg');
+  background-repeat: no-repeat;
+  background-size: cover ;
+}
+
+.banner3 {
+    width: 100%;
+    height: 200px;
+    background-image: url('/img/sozial.jpg');
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+.banner4 {
+  width: 100%;
+  height: 300px;
+  background-image: url('/img/bismarckturm.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover ;
+}
+
+.banner5 {
+  width: 100%;
+  height: 200px;
+  margin-top: 5px;
+  background-image: url('/img/focus.jpg');
+  background-repeat: no-repeat;
+  background-size: cover ;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+  /* Wird benutzt bei der Azubi Seite für die Bilder */
+div.gallery {
+      
+     margin-bottom: 5px ;
+        
+  }
+  div.gallery img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid rgb(5, 5, 5);
+  }
+
+  div.gallery:hover img {
+    border: 5px solid rgb(56, 199, 13);
+  }
+  
+
+   /* Beschreinbung für unter die Bilder */
+  div.desc {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 100px;
+  
+  }
+  .container{
+    max-width: 880px;
+     margin:auto;
+    }
+
+  .containerSocial {
+      max-width: 900px;
+      margin:auto;
+    }
+  
+  .containerAzubi {
+    max-width: 560px;
+    margin: auto;
+  }
+
+  
+  
+
+ 
+   .row::after {
+        content: "";
+        clear: both;
+        display: table;
+  }
+  
+  [class*="col-"] {
+        float: left;
+        padding: 2px;
+       
+  }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+  .footer {
+        padding: 20px;
+        float: center;
+        display: block;
+        text-align: center;
+        background: rgb(9, 9, 9);
+        margin-top: 20px;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+  }
+  .footer a {
+    color: #ffffff;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .nav a {
+      float: none;
+      width: 100%;
+    }
+    }  
+    
+      /* Für Handy */
+  @media screen and (max-width: 600px) {
+        
+      [class*="col-"] {
+          float: none;
+          width: 100%;
+        }
+      }
+    
+  @media only screen and (max-width: 768px) {
+        /* For tablets: */
+        .col-s-1 {width: 8.33%;}
+        .col-s-2 {width: 16.66%;}
+        .col-s-3 {width: 25%;}
+        .col-s-4 {width: 33.33%;}
+        .col-s-5 {width: 41.66%;}
+        .col-s-6 {width: 50%;}
+        .col-s-7 {width: 58.33%;}
+        .col-s-8 {width: 66.66%;}
+        .col-s-9 {width: 75%;}
+        .col-s-10 {width: 83.33%;}
+        .col-s-11 {width: 91.66%;}
+        .col-s-12 {width: 100%;}
+      }
+
+  @media only screen and (min-width: 868px) {
+        /* For desktop: */
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+      }
+  
+  @media screen and (max-width: 600px) {
+        .banner {
+          display: none;
+        }
+      }
+  
+  /* Hiemit ändert sich die Schrift wenn der Bildschirm bei einer mindestes Breite von 600px */
+  @media screen and (max-width: 600px) {
+       div  {
+          font-size: 13px;
+        }
+      }    
+
+      
+     
+
+
+
+  
+  
